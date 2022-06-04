@@ -1,0 +1,32 @@
+﻿<Window x:Class="BaseDeDatosCamargo.NuevoCliente"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BaseDeDatosCamargo"
+        mc:Ignorable="d"
+        Title="NuevoCliente" WindowStartupLocation="CenterScreen" WindowState="Maximized" Height="739" Width="1076" MinWidth="1076" MinHeight="739">
+    <Grid>
+        <Label Content="Nombre:" Margin="363,328,649,356" FontFamily="Tahoma" Width="56" Height="24"/>
+        <Label Content="Teléfono:" Margin="363,357,644,329" FontFamily="Tahoma" Height="22" Width="61"/>
+        <Label Content="Correo:" Margin="363,384,655,302" FontFamily="Tahoma" Height="22" Width="50"/>
+        <TextBox x:Name="tb_nombre" Height="22" Margin="428,330,397,356" TextWrapping="Wrap" Width="243" FontFamily="Tahoma"/>
+        <TextBox x:Name="tb_tel" Height="22" Margin="428,357,397,329" TextWrapping="Wrap" Width="243" FontFamily="Tahoma"/>
+        <TextBox x:Name="tb_correo" Height="22" Margin="428,384,397,302" TextWrapping="Wrap" Width="243" FontFamily="Tahoma"/>
+        <Label Content="Ingrese los datos del cliente:" Margin="363,255,542,429" FontFamily="Tahoma" Width="163" Height="24"/>
+        <Button x:Name="bt_agregar" Content="Agregar" Margin="363,434,565,253" Width="140" FontFamily="Tahoma" Height="21" Click="bt_agregar_Click" Background="#FFABF300"/>
+        <Button x:Name="bt_cancelar" Content="Cancelar" Margin="531,434,397,253" Width="140" FontFamily="Tahoma" Height="21" Click="bt_cancelar_Click" Background="#7F0057B7"/>
+        <Label Content="Empresa:" Margin="363,299,645,385" FontFamily="Tahoma" Width="60" Height="24"/>
+        <ComboBox x:Name="cb_empresa_cliente" Margin="428,299,497,387" Width="143" Loaded="cb_empresa_cliente_Loaded" Height="22"/>
+        <Button x:Name="bt_nueva" Content="Nueva" Margin="608,298,397,388" Width="63" Background="#FFABF300" Height="22" FontFamily="Tahoma" Click="bt_nueva_Click"/>
+        <Button x:Name="bt_refresh" Content="" Margin="576,299,465,388" Width="27" Height="21" FontFamily="Tahoma" Click="bt_refresh_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="actualizar.png"/>
+            </Button.Background>
+        </Button>
+        <Image Height="38" Source="Membrete superior VF.png" Margin="0,-5,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="mem_inf" Source="Membrete inferior VF.png" Height="73" VerticalAlignment="Bottom" />
+        <Image Margin="10,22,972,654" Source="PGSVF.jpg" Width="86" Height="32"/>
+
+    </Grid>
+</Window>

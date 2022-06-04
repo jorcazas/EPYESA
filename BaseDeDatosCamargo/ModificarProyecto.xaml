@@ -1,0 +1,47 @@
+﻿<Window x:Class="BaseDeDatosCamargo.ModificarProyecto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BaseDeDatosCamargo"
+        mc:Ignorable="d"
+        Title="Modificar Proyecto" WindowStartupLocation="CenterScreen" WindowState="Maximized" Height="739" Width="1076" MinWidth="1076" MinHeight="739">
+    <Grid >
+        <Button x:Name="bt_mod_prof_max" Content="Modificar &#xD;&#xA;Profundidad &#xD;&#xA;Máxma" Margin="239,352,758,313" Width="71" Click="bt_mod_prof_max_Click" Height="43" FontSize="10" Background="#FFABF300"/>
+        <Button x:Name="bt_atras" Content="Atrás" Margin="82,569,871,114" Height="25" FontFamily="Tahoma" Click="bt_atras_Click" Background="#7F0057B7" Width="115" Grid.ColumnSpan="2"/>
+        <Button x:Name="bt_ver_documentos" Content="Ver documentos" Height="25" Margin="82,419,756,264" Width="230" FontFamily="Tahoma" Click="bt_ver_documentos_Click" Background="#FFABF300" Grid.ColumnSpan="2" />
+        <Button x:Name="bt_as_reporte" Content="Asignar Reporte Final" Margin="82,539,756,144" Width="230" Height="25" Background="#FFABF300" Click="bt_as_reporte_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="bt_agregar_factura" Content="Agregar Factura" Margin="82,449,756,234" Width="230" Click="bt_agregar_factura_Click" Height="25" Grid.ColumnSpan="2"/>
+        <Button x:Name="bt_agregar_orden_compra" Content="Agregar Orden de Compra" Margin="82,479,756,204" Width="230" Click="bt_agregar_orden_compra_Click" Height="25" Grid.ColumnSpan="2"/>
+        <Button x:Name="bt_agregar_cotizacion" Content="Agregar Cotización" Margin="82,509,756,174" Width="230" Click="bt_agregar_cotizacion_Click" Height="25" Grid.ColumnSpan="2"/>
+        <Label x:Name="lb_nombre" Content="" Margin="84,197,469,487" FontFamily="Tahoma" Height="24" Width="515" Grid.ColumnSpan="2"/>
+        <Label x:Name="lb_cliente" Content="" Margin="84,255,469,429" FontFamily="Tahoma" Height="24" Width="515" Grid.ColumnSpan="2"/>
+        <Label x:Name="lb_estado" Content="" Margin="621,268,60,416" FontFamily="Tahoma" Height="24" Width="387"/>
+        <Label x:Name="lb_municipio" Content="" Margin="621,297,60,387" FontFamily="Tahoma" Height="24" Width="387"/>
+        <Label Content="Ubicación:" Margin="621,239,60,445" FontFamily="Tahoma" FontWeight="Bold" Height="24" Width="387"/>
+        <Label x:Name="lb_responsable" Content="" Margin="84,313,469,371" FontFamily="Tahoma" Height="24" Width="515" Grid.ColumnSpan="2"/>
+        <Label Content="Responsable de campo:" Margin="84,284,829,400" FontFamily="Tahoma" FontWeight="Bold" Height="24" Width="155" Grid.ColumnSpan="2"/>
+        <Label Content="Proyecto:" Margin="84,168,912,516" Width="72" FontFamily="Tahoma" FontWeight="Bold" Height="24" Grid.ColumnSpan="2"/>
+        <Label x:Name="lb_nombre_Copy" Content="Cliente:" Margin="84,226,923,458" FontFamily="Tahoma" FontWeight="Bold" Height="24" Width="61" Grid.ColumnSpan="2"/>
+        <Label Content="Coordenadas:" Margin="621,326,60,358" FontFamily="Tahoma" FontWeight="Bold" Height="24" Width="387"/>
+        <Label Content="Latitud:" Margin="621,355,383,329" FontFamily="Tahoma" Height="24" Width="64"/>
+        <Label Content="Longitud:" Margin="746,355,258,329" FontFamily="Tahoma" Height="24" Width="64"/>
+        <Label x:Name="lb_latitud" Content="" Margin="621,384,327,300" FontFamily="Tahoma" Height="24" Width="120"/>
+        <Label x:Name="lb_longitud" Content="" Margin="746,384,202,300" FontFamily="Tahoma" Height="24" Width="120"/>
+        <Label Content="Profundidad máxima:" Margin="84,342,829,342" FontFamily="Tahoma" FontWeight="Bold" Height="24" Width="155" Grid.ColumnSpan="2"/>
+        <Label x:Name="lb_prof_max" Content="" Margin="84,371,923,313" FontFamily="Tahoma" Height="24" Width="61"/>
+        <Label Content="Fecha de asignación (AAAA-MM-DD): " Margin="621,181,60,503" FontFamily="Tahoma" FontWeight="Bold" Height="24" Width="387"/>
+        <Label x:Name="lb_fecha" Content="" Margin="621,210,60,474" FontFamily="Tahoma" Height="24" Width="387"/>
+        <Label Content="ID:" Margin="621,123,405,561" FontFamily="Tahoma" FontWeight="Bold" Height="24" Width="42"/>
+        <Label x:Name="lb_id" Content="" Margin="621,152,105,532" FontFamily="Tahoma" RenderTransformOrigin="1.593,0.5" Height="24" Width="342"/>
+        <Label Content="m" Margin="150,371,886,313" Width="32" FontFamily="Tahoma" Height="24"/>
+        <Image x:Name="semaforo" Margin="84,86,926,561" Source="amarillo.png" Width="58" Height="61" Grid.ColumnSpan="2"/>
+        <Label x:Name="lb_terminado" Content="NO TERMINADO" Margin="147,106,815,578" FontFamily="Tahoma" FontWeight="Bold" Height="24" Width="106"/>
+        <Label Content="Fecha de finalización (AAAA-MM-DD): " Margin="621,413,60,271" FontFamily="Tahoma" FontWeight="Bold" Height="24" Width="387"/>
+        <Label x:Name="lb_fecha_finalización" Content="-" Margin="621,442,60,242" FontFamily="Tahoma" Height="24" Width="387"/>
+        <Image Height="38" Source="Membrete superior VF.png" Margin="0,-5,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Image x:Name="mem_inf" Source="Membrete inferior VF.png" Height="73" VerticalAlignment="Bottom" Grid.ColumnSpan="2" />
+        <Image Margin="10,22,972,654" Source="PGSVF.jpg" Width="86" Height="32"/>
+
+    </Grid>
+</Window>

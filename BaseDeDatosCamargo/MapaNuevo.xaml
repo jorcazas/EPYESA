@@ -1,0 +1,18 @@
+﻿<Window x:Class="BaseDeDatosCamargo.MapaNuevo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BaseDeDatosCamargo"
+        mc:Ignorable="d"
+        Title="MapaNuevo" WindowStartupLocation="CenterScreen" WindowState="Maximized" Height="739" Width="1076" MinWidth="1076" MinHeight="739">
+    <Grid>
+        <Image x:Name="mapa" Margin="10,119,104,78" Loaded="mapa_Loaded" />
+        <Button x:Name="bt_cerrar" Content="Cerrar" Height="28" Margin="969,602,10,78" Width="89" FontFamily="Tahoma" Click="bt_cerrar_Click" Background="#7F0057B7" />
+        <Label Content="Vista rápida de la ubicación del proyecto nuevo con respecto de los demás." Margin="160,38,383,643" FontFamily="Tahoma" Height="27" Width="525" FontWeight="Bold"/>
+        <Label Content="En el Escritorio, se generó un archivo llamado mapa_simple_proyecto_nuevo.png en donde puede ver este mismo mapa con mayor resolución." Margin="160,70,104,594" FontFamily="Tahoma" Height="44"/>
+        <Image Height="38" Source="Membrete superior VF.png" Margin="0,-5,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="mem_inf" Source="Membrete inferior VF.png" Height="73" VerticalAlignment="Bottom" />
+        <Image Margin="10,22,972,654" Source="PGSVF.jpg" Width="86" Height="32"/>
+    </Grid>
+</Window>

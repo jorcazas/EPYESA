@@ -1,0 +1,12 @@
+INSTALACIÓN DE APLICACIÓN:
+
+REVISAR EN CÓDIGO DE APP LA DIRECCIÓN DE PYTHON.EXE, DE ACTUALIZACION_MAPAS.PY..., 
+DE LOS ARCHIVOS QUE SE VAN A GENERAR (cotización, orden compra y factura)
+
+REVISAR EN CÓDIGO DE PYTHON LA DIRECCIÓN EN LA QUE SE GENERAN LOS CSV
+
+INSTALAR DEPENDENCIAS (pip install...) desde cmd en la máquina host:
+-pip: python -m pip install -U pip
+-geopandas
+-pandas
+-matplotlib

@@ -1,0 +1,19 @@
+﻿<Window x:Class="BaseDeDatosCamargo.ReporteEconomico"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BaseDeDatosCamargo"
+        mc:Ignorable="d"
+        Title="ReporteEconomico" WindowStartupLocation="CenterScreen" WindowState="Maximized" Height="739" Width="1076" MinWidth="1076" MinHeight="739">
+    <Grid>
+        <DataGrid x:Name="dg" Height="451" Margin="14,128,109,129" Width="945" IsReadOnly="True"   />
+        <Button x:Name="bt_atras" Content="Atrás" Height="40" Margin="964,539,6,129" Width="98" FontFamily="Tahoma" Click="bt_atras_Click" Background="#7F0057B7"/>
+        <Label Content="Vista previa del reporte económico de todos los proyectos." Margin="14,99,720,580" FontFamily="Tahoma" Width="334" Height="29"/>
+        <Label Content="En el Escritorio encontrarás el reporte económico en formato .csv" Margin="353,99,310,580" FontFamily="Tahoma" FontWeight="Bold" Width="405" Height="29"/>
+        <Image Height="38" Source="Membrete superior VF.png" Margin="0,-5,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="mem_inf" Source="Membrete inferior VF.png" Height="73" VerticalAlignment="Bottom" />
+        <Image Margin="10,22,972,654" Source="PGSVF.jpg" Width="86" Height="32"/>
+
+    </Grid>
+</Window>

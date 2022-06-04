@@ -1,0 +1,24 @@
+﻿<Window x:Class="BaseDeDatosCamargo.AsignarReporte"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BaseDeDatosCamargo"
+        mc:Ignorable="d"
+        Title="AsignarReporte" WindowStartupLocation="CenterScreen" WindowState="Maximized" Height="739" Width="1076" MinWidth="1076" MinHeight="739">
+    <Grid>
+        <Button x:Name="bt_agregar" Content="Asignar fecha de finalización y reporte final" Margin="387,381,390,307" Width="291" FontFamily="Tahoma" Click="bt_agregar_Click" Height="20" Background="#FFABF300"/>
+        <Button x:Name="bt_atras" Content="Cancelar" Margin="387,405,390,285" Width="291" FontFamily="Tahoma" Click="bt_atras_Click" Height="18" Background="#7F0057B7"/>
+        <Label Content="Asigna la fecha de finalización del proyecto:" Margin="387,291,390,385" Height="32" Width="291" FontFamily="Tahoma" FontWeight="Bold"/>
+        <ComboBox x:Name="cb_anio" Margin="387,328,591,360" Width="90" Loaded="cb_anio_Loaded" FontFamily="Tahoma" Height="20" RenderTransformOrigin="0.556,0.95"/>
+        <ComboBox x:Name="cb_mes" Margin="482,328,496,360" Width="90" Loaded="cb_mes_Loaded" FontFamily="Tahoma" Height="20"/>
+        <ComboBox x:Name="cb_dia" Margin="577,328,401,360" Width="90" Loaded="cb_dia_Loaded" FontFamily="Tahoma" Height="20"/>
+        <Button x:Name="bt_asignar_reporte" Content="Asignar Reporte" Margin="387,353,591,333" Width="90" FontFamily="Tahoma" Height="22" Click="bt_asignar_reporte_Click" />
+        <Button x:Name="bt_X_r" Content="X" Margin="656,354,390,332" Width="22" Height="22" FontFamily="Tahoma" Click="bt_X_r_Click" Visibility="Hidden" Background="#FFFF3B3B"/>
+        <Label x:Name="lb_r" Content="" Margin="482,353,417,333" Height="22" FontFamily="Tahoma" Background="Transparent" FontSize="10" Width="169"/>
+        <Image Height="38" Source="Membrete superior VF.png" Margin="0,-5,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="mem_inf" Source="Membrete inferior VF.png" Height="73" VerticalAlignment="Bottom" />
+        <Image Margin="10,22,972,654" Source="PGSVF.jpg" Width="86" Height="32"/>
+
+    </Grid>
+</Window>
